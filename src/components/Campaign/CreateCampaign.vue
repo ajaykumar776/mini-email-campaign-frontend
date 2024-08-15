@@ -25,6 +25,9 @@
             accept=".csv"
           />
           <div v-if="errors.csvFile" class="text-danger">{{ errors.csvFile }}</div>
+          <p class="mt-2">
+            <a :href="sampleCsvUrl" download="sample_contacts.csv">Download Sample CSV File</a>
+          </p>
         </div>
         <button type="submit" class="btn btn-primary">Create Campaign</button>
       </form>
@@ -43,6 +46,7 @@ export default {
       name: '',
       csvFile: null,
       errors: {}, // Object to store validation errors
+      sampleCsvUrl: '/sample_contacts.csv', // URL for the sample CSV file
     };
   },
   methods: {
@@ -66,7 +70,7 @@ export default {
       if (!this.validateForm()) {
         return;
       }
-      
+
       const formData = new FormData();
       formData.append('name', this.name);
       formData.append('csv_file', this.csvFile);
