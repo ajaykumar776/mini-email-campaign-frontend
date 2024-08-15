@@ -1,11 +1,40 @@
 # Mini Email Campaign System - Frontend Documentation
 
+# Campaign App
+
+## Dependencies
+
+- **Vue**: `^3.4.29`  
+  The core framework for building your user interface.
+
 ## Table of Contents
-1. [Login](#1-login)
-2. [Registration](#2-registration)
-3. [Logout](#3-logout)
-4. [Campaign Management](#4-campaign-management)
-    - [Create Campaign](#41-create-campaign)
-    - [Delete Campaign](#42-delete-campaign)
-    - [List Campaigns](#43-list-campaigns)
-    - [Auto Update Campaign Status](#44-auto-update-campaign-status)
+
+- Login
+- Registration
+- Logout
+- Campaign Management
+  - Create Campaign
+  - Delete Campaign
+  - List Campaigns
+  - Auto Update Campaign Status
+
+
+
+### Clone It
+```bash
+git clone git@github.com:ajaykumar776/mini-email-campaign-frontend.git
+
+```
+
+2. Install dependencies:
+    ```bash
+    npm install
+
+    npm run dev
+    ```
+
+3. Set-up the Server API_BASE_URL:
+    ```bash
+    Services/api/action.js   
+    ```
+ 
